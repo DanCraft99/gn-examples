@@ -1,0 +1,5 @@
+group("root") {
+    deps = [
+        "//0_Hello:Hello",
+    ]
+}
