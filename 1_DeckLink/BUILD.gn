@@ -1,5 +1,17 @@
+import("//build/toolchain/win/midl.gni")
+
+midl("DeckLinkAPI_idl") {
+  sources = [
+    ".\DeckLink\Win\include\DeckLinkAPI.idl",
+  ]
+}
+
 executable("DeckLink") {
   sources = [
     "DeckLink.cpp",
+  ]
+
+  deps = [
+    ":DeckLinkAPI_idl",
   ]
 }
