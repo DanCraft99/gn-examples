@@ -1,5 +1,6 @@
 group("root") {
     deps = [
         "//0_Hello:Hello",
+        "//1_DeckLink:DeckLink",
     ]
 }
