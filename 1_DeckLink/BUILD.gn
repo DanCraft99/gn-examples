@@ -18,11 +18,7 @@ executable("DeckLink") {
   ]
 
   include_dirs = [
-    "C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\winrt",
-    "C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\um",
-    "C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt",
-    "C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\shared",
-    "$target_gen_dir"
+    "$target_gen_dir",
   ]
 
   libs = [
